@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center_vertical"
+         android:padding="8dp"
+         android:orientation="horizontal">
+
+        <ImageView
+             android:layout_height="42dp"
+             android:layout_width="42dp"
+             android:src="@drawable/location_ic"
+             android:padding="8dp"
+             android:tint="?attr/colorControlNormal" />
+
+        <com.google.android.material.textview.MaterialTextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?attr/textAppearanceHeadline6"
+             android:layout_weight="1.0"
+             android:id="@+id/cityNameTextView"
+             android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+             android:layout_height="48dp"
+             android:layout_width="48dp"
+             android:src="@drawable/sunny_ic"
+             android:id="@+id/tempIndicatorImageView"
+             android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:textAppearance="?attr/textAppearanceHeadline3"
+         android:textSize="50sp"
+         android:paddingStart="16dp"
+         android:layout_marginTop="8dp"
+         android:id="@+id/tempTextView"
+         android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textAppearance="?attr/textAppearanceHeadline6"
+         android:padding="8dp"
+         android:layout_marginStart="16dp"
+         android:id="@+id/weatherTextView" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardElevation="4dp"
+        app:strokeWidth="0dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/cardView">
+
+        <FrameLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="horizontal">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical"
+                     android:layout_weight="1.0">
+
+                    <com.google.android.material.textview.MaterialTextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:visibility="gone"
+                         android:textAppearance="?attr/textAppearanceBody2"
+                         android:id="@+id/dateTextView" />
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center_vertical"
+                         android:orientation="horizontal">
+
+                        <ImageView
+                             android:layout_height="42dp"
+                             android:layout_width="42dp"
+                             android:src="@drawable/temperature_ic"
+                             android:padding="8dp"
+                             android:tint="?attr/colorControlNormal" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:gravity="center|left"
+                             android:textAppearance="?attr/textAppearanceBody2"
+                             android:layout_marginStart="8dp"
+                             android:layout_weight="1.0"
+                             android:id="@+id/weatherinfo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center_vertical"
+                         android:orientation="horizontal"
+                         android:layout_marginTop="16dp">
+
+                        <ImageView
+                             android:layout_height="42dp"
+                             android:layout_width="42dp"
+                             android:src="@drawable/pressure_ic"
+                             android:padding="8dp"
+                             android:tint="?attr/colorControlNormal" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:gravity="center|left"
+                             android:textAppearance="?attr/textAppearanceBody2"
+                             android:layout_marginStart="8dp"
+                             android:layout_weight="1.0"
+                             android:id="@+id/weatherinfoPressure" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:orientation="vertical"
+                     android:layout_weight="1.0">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center_vertical"
+                         android:orientation="horizontal">
+
+                        <ImageView
+                             android:layout_height="42dp"
+                             android:layout_width="42dp"
+                             android:src="@drawable/wind_ic"
+                             android:padding="8dp"
+                             android:tint="?attr/colorControlNormal" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:gravity="center|left"
+                             android:textAppearance="?attr/textAppearanceBody2"
+                             android:layout_marginStart="8dp"
+                             android:layout_weight="1.0"
+                             android:id="@+id/windTextView" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center_vertical"
+                         android:orientation="horizontal"
+                         android:layout_marginTop="16dp">
+
+                        <ImageView
+                             android:layout_height="42dp"
+                             android:layout_width="42dp"
+                             android:src="@drawable/humidity_ic"
+                             android:padding="8dp"
+                             android:tint="?attr/colorControlNormal" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:gravity="center|left"
+                             android:textAppearance="?attr/textAppearanceBody2"
+                             android:layout_marginStart="8dp"
+                             android:layout_weight="1.0"
+                             android:id="@+id/humidityTextView" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

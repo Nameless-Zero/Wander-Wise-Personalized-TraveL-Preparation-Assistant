@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/coordinator">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:paddingEnd="24dp"
+         android:orientation="vertical"
+         android:paddingStart="24dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:hintEnabled="true"
+                 android:hint="Item Name"
+                 android:layout_marginTop="8dp"
+                 app:boxBackgroundMode="outline"
+                 app:boxStrokeWidth="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:imeOptions="actionNext"
+                     android:inputType="textCapSentences"
+                     android:id="@+id/item_name_input" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_vertical"
+                 android:orientation="horizontal"
+                 android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     app:hintEnabled="true"
+                     android:hint="Item Weight"
+                     app:boxBackgroundMode="outline"
+                     android:layout_weight="1.0"
+                     app:boxStrokeWidth="1dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:imeOptions="actionNext"
+                         android:inputType="number"
+                         android:id="@+id/item_weight_input" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginStart="8dp"
+                     android:id="@+id/weight_unit_spinner">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 app:hintEnabled="true"
+                 android:hint="Item Quantity"
+                 android:layout_marginTop="8dp"
+                 app:boxBackgroundMode="outline"
+                 app:boxStrokeWidth="1dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:imeOptions="actionDone"
+                     android:inputType="number"
+                     android:id="@+id/item_quantity_input" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="16dp"
+                 android:padding="16dp"
+                 app:cornerRadius="24dp"
+                 android:backgroundTint="@color/colorAccent"
+                 android:layout_marginTop="8dp"
+                 android:id="@+id/add_item_button"
+                 android:layout_gravity="end"
+                 android:text="Enter" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

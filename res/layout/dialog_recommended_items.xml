@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="24dp"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:visibility="gone"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:id="@+id/destination_type" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textAppearance="?attr/textAppearanceHeadline6"
+         android:layout_marginTop="8dp"
+         android:text="Suggested items based on your selected destination type" />
+
+    <androidx.recyclerview.widget.RecyclerView
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         androlayout_marginTop="8dp"
+         android:id="@+id/recyclerView" />
+
+    <CheckBox
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:id="@+id/selectAllCheckBox"
+         android:text="Select All"
+         android:paddingTop="8dp" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="end"
+         android:orientation="horizontal"
+         android:paddingTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:padding="16dp"
+             android:backgroundTint="@color/colorAccent"
+             android:layout_marginLeft="8dp"
+             android:layout_weight="1.0"
+             android:id="@+id/cancelButton"
+             android:text="Cancel" />
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:backgroundTint="@color/colorAccent"
+             android:layout_marginStart="8dp"
+             android:layout_weight="1.0"
+             android:id="@+id/addButton"
+             android:text="Add" />
+
+    </LinearLayout>
+
+</LinearLayout>

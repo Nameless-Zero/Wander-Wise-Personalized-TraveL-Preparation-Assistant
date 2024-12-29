@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/coordinator">
+
+    <android.webkit.WebView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:id="@+id/morewebView">
+
+    </android.webkit.WebView>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:background="@color/mainBg"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="60dp"
+                 android:layout_width="60dp"
+                 android:src="@drawable/back_ic"
+                 android:layout_marginEnd="8dp"
+                 android:padding="16dp"
+                 android:tint="?attr/colorControlNormal"
+                 android:id="@+id/back"
+                 android:foreground="?attr/selectableItemBackground" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textAppearance="?attr/textAppearanceHeadline6"
+                 android:layout_weight="1.0"
+                 android:id="@+id/location" />
+
+        </LinearLayout>
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:visibility="gone"
+             android:textAppearance="?@attr/textAppearanceBody2"
+             android:textColor="@color/colorText"
+             android:layout_marginTop="8dp"
+             android:textStyle="bold"
+             android:id="@+id/modeTrasnportation" />
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="150dp"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:layout_margin="8dp"
+             app:cardElevation="0.5dp"
+             app:strokeWidth="0dp"
+             app:cardBackgroundColor="@color/colorCard"
+             app:cardCornerRadius="8dp"
+             android:id="@+id/banner">
+
+            <ImageView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:adjustViewBounds="true"
+                 android:src="@drawable/banner"
+                 android:scaleType="centerCrop"
+                 android:id="@+id/backdrop" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="visible"
+             android:layout_marginTop="8dp"
+             app:trackThickness="4dp"
+             app:indicatorColor="@color/colorAccent"
+             android:id="@+id/progress_linear" />
+
+        <View
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:background="@color/mainBg" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

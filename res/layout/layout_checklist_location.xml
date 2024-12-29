@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/mainBg"
+     android:id="@+id/coordinator">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="60dp"
+                 android:layout_width="60dp"
+                 android:src="@drawable/back_ic"
+                 android:layout_marginEnd="12dp"
+                 android:padding="16dp"
+                 android:tint="?attr/colorControlNormal"
+                 android:id="@+id/back"
+                 android:foreground="?attr/selectableItemBackground" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textAppearance="?attr/textAppearanceHeadline6"
+                 android:text="Destination plan" />
+
+        </LinearLayout>
+
+        <ImageView
+             android:layout_height="200dp"
+             android:layout_width="match_parent"
+             android:src="@drawable/bg"
+             android:layout_margin="8dp" />
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="8dp"
+             app:cardElevation="0.5dp"
+             app:strokeWidth="0dp"
+             app:cardBackgroundColor="@color/colorCard"
+             app:cardCornerRadius="16dp">
+
+            <ListView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:divider="@color/colorAccent"
+                 android:id="@+id/list_view"
+                 android:dividerHeight="0dp"
+                 android:layout_gravity="top">
+
+            </ListView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <TextView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:layout_centerInParent="true"
+         android:visibility="gone"
+         android:gravity="center"
+         android:id="@+id/empty_view"
+         android:text="Empty" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:visibility="gone"
+         android:contentDescription="Add Item"
+         android:layout_margin="24dp"
+         app:srcCompat="@drawable/plus_ic"
+         android:id="@+id/fab"
+         android:layout_gravity="bottom|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

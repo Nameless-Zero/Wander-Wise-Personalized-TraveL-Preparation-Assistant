@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:paddingEnd="24dp"
+         android:orientation="vertical"
+         android:paddingStart="24dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:orientation="horizontal"
+             android:layout_marginTop="16dp">
+
+            <ImageView
+                 android:layout_height="42dp"
+                 android:layout_width="42dp"
+                 android:src="@drawable/back_ic"
+                 android:padding="8dp"
+                 android:tint="?attr/colorControlNormal"
+                 android:foreground="?attr/selectableItemBackground"
+                 android:id="@+id/back" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textAppearance="?attr/textAppearanceHeadline6"
+                 android:layout_marginStart="8dp"
+                 android:layout_weight="1.0"
+                 android:text="New Trip" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:hintEnabled="true"
+             android:padding="8dp"
+             android:id="@+id/textInputLayoutcurrent">
+
+            <AutoCompleteTextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="16dp"
+                 android:inputType="textCapSentences"
+                 android:id="@+id/current_location_input" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="visible"
+             android:layout_marginTop="8dp"
+             app:trackThickness="4dp"
+             app:indicatorColor="@color/colorAccent"
+             android:id="@+id/progress_linear" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:background="@drawable/card_background"
+             android:padding="16dp"
+             android:layout_marginTop="8dp"
+             android:id="@+id/destination_input" />
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:cardElevation="2dp"
+             app:strokeWidth="0dp"
+             android:layout_marginTop="16dp"
+             app:cardCornerRadius="8dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textStyle="bold"
+                 android:text="Primary Modes" />
+
+            <RadioGroup
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="8dp"
+                 android:orientation="vertical"
+                 android:layout_marginTop="8dp"
+                 android:id="@+id/radio_group_mode">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginTop="8dp"
+                     android:id="@+id/radio_air"
+                     android:text="Air transportation" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:id="@+id/radio_land"
+                     android:text="Land transportation" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:id="@+id/radio_water"
+                     android:text="Water transportation" />
+
+            </RadioGroup>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:cardElevation="2dp"
+             app:strokeWidth="0dp"
+             android:layout_marginTop="16dp"
+             app:cardCornerRadius="8dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textStyle="bold"
+                 android:text="Destination Type" />
+
+            <RadioGroup
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:padding="8dp"
+                 android:orientation="vertical"
+                 android:layout_marginTop="8dp"
+                 android:id="@+id/radio_group_destination">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginTop="8dp"
+                     android:id="@+id/radio_beach"
+                     android:text="Beach" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:id="@+id/radio_mountain"
+                     android:text="Mountain" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:id="@+id/radio_city"
+                     android:text="City" />
+
+            </RadioGroup>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:padding="16dp"
+             android:backgroundTint="@color/colorAccent"
+             android:layout_marginTop="8dp"
+             android:id="@+id/add"
+             android:text="Proceed" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/mainBg"
+     android:id="@+id/coordinator">
+
+    <ImageView
+         android:layout_height="240dp"
+         android:layout_width="match_parent"
+         android:src="@drawable/header_banner"
+         android:scaleType="centerCrop" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="16dp"
+         android:orientation="vertical"
+         android:layout_gravity="center">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textAppearance="?attr/textAppearanceHeadline6"
+             android:text="REGISTER" />
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:hintEnabled="true"
+             android:hint="Username"
+             android:layout_marginTop="8dp"
+             app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:imeOptions="actionNext"
+                 android:inputType="textPersonName"
+                 android:id="@+id/registerUsername" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:hintEnabled="true"
+             android:hint="Email"
+             android:layout_marginTop="8dp"
+             app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:imeOptions="actionNext"
+                 android:inputType="textPersonName"
+                 android:id="@+id/registerEmail" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:hintEnabled="true"
+             android:hint="Password"
+             android:layout_marginTop="8dp"
+             app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:imeOptions="actionNext"
+                 android:inputType="textPersonName"
+                 android:id="@+id/registerPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:hintEnabled="true"
+             android:hint="Confirm password"
+             android:layout_marginTop="8dp"
+             app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:imeOptions="actionNext"
+                 android:inputType="textPersonName"
+                 android:id="@+id/registerConfirmPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             app:cornerRadius="24dp"
+             android:backgroundTint="@color/colorAccent"
+             android:layout_marginTop="8dp"
+             android:id="@+id/register"
+             android:text="Submit" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

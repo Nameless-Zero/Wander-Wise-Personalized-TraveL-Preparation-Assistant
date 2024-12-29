@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_ic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Login" />
+        <activity
+            android:name="Register" />
+        <activity
+            android:name="MainActivity" />
+        <activity
+            android:name="MoreWebview" />
+        <activity
+            android:name="WeatherActivity" />
+        <activity
+            android:name="Transportation" />
+        <activity
+            android:name="SavedItemsActivity" />
+        <activity
+            android:name="com.sns.wanderwise.checklist.ChecklistLocation" />
+        <activity
+            android:name="com.sns.wanderwise.checklist.checklist" />
+    </application>
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/mainBg"
+     android:id="@+id/coordinator">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:padding="8dp"
+             android:orientation="horizontal">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:layout_weight="1.0">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textAppearance="?attr/textAppearanceHeadline6"
+                     android:padding="8dp"
+                     android:text="Packed" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textAppearance="?attr/textAppearanceHeadline6"
+                     android:padding="8dp"
+                     android:layout_weight="1.0"
+                     android:id="@+id/totalWeightTextView"
+                     android:text="Total Weight: 0kg" />
+
+            </LinearLayout>
+
+            <ImageView
+                 android:layout_height="42dp"
+                 android:layout_width="42dp"
+                 android:src="@drawable/select_all_ic"
+                 android:padding="8dp"
+                 android:tint="?attr/colorControlNormal"
+                 android:layout_marginStart="8dp"
+                 android:id="@+id/selectAllButton"
+                 android:foreground="?attr/selectableItemBackground" />
+
+            <ImageView
+                 android:layout_height="42dp"
+                 android:layout_width="42dp"
+                 android:src="@drawable/delete_ic"
+                 android:padding="8dp"
+                 android:tint="?attr/colorControlNormal"
+                 android:layout_marginStart="8dp"
+                 android:id="@+id/deleteButton"
+                 android:foreground="?attr/selectableItemBackground" />
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_margin="8dp"
+             app:cardElevation="0.5dp"
+             app:strokeWidth="0dp"
+             app:cardBackgroundColor="@color/colorCard"
+             app:cardCornerRadius="16dp">
+
+            <ListView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:layout_weight="1"
+                 android:id="@+id/savedItemsListView">
+
+            </ListView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

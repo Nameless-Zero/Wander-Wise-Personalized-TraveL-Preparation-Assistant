@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:padding="16dp">
+
+	<ImageView
+		android:tint="@color/colorAccent"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:src="@drawable/cloud_ic"
+		android:padding="30dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Wander Wise User"
+		android:layout_marginTop="8dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Text"
+		android:id="@+id/acountUser"
+		android:layout_marginTop="8dp"
+		android:padding="8dp"/>
+
+	 <com.google.android.material.button.MaterialButton
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="16dp"
+         app:cornerRadius="24dp"
+         android:backgroundTint="@color/colorAccent"
+         android:layout_marginTop="8dp"
+         android:id="@+id/acountSignout"
+         android:text="SignOut" />
+
+</LinearLayout>
+

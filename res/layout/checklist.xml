@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/mainBg"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:visibility="gone"
+         android:gravity="center_vertical"
+         android:padding="16dp"
+         android:orientation="horizontal">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginEnd="8dp"
+             android:textAppearance="?attr/textAppearanceHeadline6"
+             android:textSize="14dp"
+             android:paddingStart="16dp"
+             android:layout_weight="1.0"
+             android:text="Checking My Packing" />
+
+        <com.google.android.material.button.MaterialButton
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="10sp"
+             android:backgroundTint="@color/colorAccent"
+             android:text="save"
+             android:id="@+id/save" />
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:padding="16dp"
+             android:orientation="horizontal">
+
+            <ImageView
+                 android:layout_height="42dp"
+                 android:layout_width="42dp"
+                 android:padding="8dp"
+                 android:tint="?attr/colorControlNormal"
+                 android:id="@+id/mode_ic"
+                 android:foreground="?attr/selectableItemBackground" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginEnd="8dp"
+                 android:gravity="center_vertical"
+                 android:textAppearance="?attr/textAppearanceHeadline6"
+                 android:layout_marginStart="8dp"
+                 android:textIsSelectable="true"
+                 android:layout_weight="1.0"
+                 android:id="@+id/checklist_title" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="8sp"
+                 android:text="Recomm-item ->"
+                 android:id="@+id/anim" />
+
+            <ImageView
+                 android:layout_height="42dp"
+                 android:layout_width="42dp"
+                 android:contentDescription="Weather icon button"
+                 android:src="@drawable/box_ic"
+                 android:background="@drawable/rounded"
+                 android:padding="12dp"
+                 android:tint="@color/colorAccent"
+                 android:layout_marginStart="8dp"
+                 android:id="@+id/location" />
+
+            <ImageView
+                 android:layout_height="42dp"
+                 android:layout_width="42dp"
+                 android:contentDescription="Saved items icon button"
+                 android:src="@drawable/bag_ic"
+                 android:background="@drawable/rounded"
+                 android:padding="12dp"
+                 android:tint="@color/colorAccent"
+                 android:layout_marginStart="8dp"
+                 android:id="@+id/viewsaveditemsbutton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:orientation="vertical"
+             android:paddingBottom="16dp"
+             android:paddingStart="24dp">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:visibility="gone"
+                 android:textAppearance="?attr/textAppearanceSubtitle1"
+                 android:id="@+id/destinationType"
+                 android:text="Destination Type:" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:visibility="gone"
+                 android:textAppearance="?attr/textAppearanceSubtitle1"
+                 android:layout_marginTop="8dp"
+                 android:id="@+id/mode"
+                 android:text="Mode of transportation:" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="8dp"
+         android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:cardElevation="0.5dp"
+             app:strokeWidth="0dp"
+             app:cardBackgroundColor="@color/colorCard"
+             app:cardCornerRadius="16dp"
+             android:layout_weight="1.0"
+             android:id="@+id/booking">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:padding="12dp"
+                 android:orientation="vertical">
+
+                <ImageView
+                     android:layout_height="42dp"
+                     android:layout_width="42dp"
+                     android:src="@drawable/cloud_ic"
+                     android:tint="@color/colorAccent" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginTop="8dp"
+                     android:text="Weather" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:cardElevation="0.5dp"
+             app:strokeWidth="0dp"
+             app:cardBackgroundColor="@color/colorCard"
+             android:layout_marginStart="8dp"
+             app:cardCornerRadius="16dp"
+             android:layout_weight="1.0"
+             android:id="@+id/travelways">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:padding="12dp"
+                 android:orientation="vertical">
+
+                <ImageView
+                     android:layout_height="42dp"
+                     android:layout_width="42dp"
+                     android:src="@drawable/location_ic"
+                     android:tint="@color/colorAccent" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginTop="8dp"
+                     android:text="Travelways" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             app:cardElevation="0.5dp"
+             app:strokeWidth="0dp"
+             app:cardBackgroundColor="@color/colorCard"
+             android:layout_marginStart="8dp"
+             app:cardCornerRadius="16dp"
+             android:layout_weight="1.0"
+             android:id="@+id/attractions">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:padding="12dp"
+                 android:orientation="vertical">
+
+                <ImageView
+                     android:layout_height="42dp"
+                     android:layout_width="42dp"
+                     android:src="@drawable/discover_ic"
+                     android:tint="@color/colorAccent" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginTop="8dp"
+                     android:text="Attractions" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_margin="8dp"
+         app:cardElevation="0.5dp"
+         app:strokeWidth="0dp"
+         app:cardBackgroundColor="@color/colorCard"
+         app:cardCornerRadius="16dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:orientation="vertical">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_vertical"
+                 android:padding="16dp"
+                 android:orientation="horizontal"
+                 android:foreground="?attr/selectableItemBackground"
+                 android:id="@+id/showEssentialMenu">
+
+                <ImageView
+                     android:layout_height="42dp"
+                     android:layout_width="42dp"
+                     android:src="@drawable/essential_ic"
+                     android:padding="8dp"
+                     android:tint="?attr/colorControlNormal" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginEnd="8dp"
+                     android:textSize="16sp"
+                     android:layout_marginStart="8dp"
+                     android:layout_weight="1.0"
+                     android:text="Packing Necessities"
+                     android:textStyle="bold" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:visibility="gone"
+                     android:textSize="14sp"
+                     android:id="@+id/total_weight_text"
+                     android:textStyle="bold" />
+
+                <ImageView
+                     android:layout_height="42dp"
+                     android:layout_width="42dp"
+                     android:src="@drawable/down_ic"
+                     android:padding="8dp"
+                     android:tint="?attr/colorControlNormal"
+                     android:layout_marginStart="8dp"
+                     android:id="@+id/show" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="vertical"
+                 android:id="@+id/essentials">
+
+                <ListView
+                     android:layout_height="0dp"
+                     android:layout_width="match_parent"
+                     android:divider="@android:color/transparent"
+                     android:listSelector="@android:color/transparent"
+                     android:choiceMode="multipleChoice"
+                     android:layout_weight="1.0"
+                     android:id="@+id/checklist_list_view">
+
+                </ListView>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center_vertical"
+                     android:padding="8dp"
+                     android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:padding="16dp"
+                         android:backgroundTint="@color/colorAccent"
+                         android:layout_marginStart="8dp"
+                         android:layout_weight="1.0"
+                         android:id="@+id/add" />
+
+                    <ImageView
+                         android:layout_height="42dp"
+                         android:layout_width="42dp"
+                         android:src="@drawable/select_all_ic"
+                         android:padding="8dp"
+                         android:tint="?attr/colorControlNormal"
+                         android:layout_marginStart="8dp"
+                         android:id="@+id/selectall_button"
+                         android:foreground="?attr/selectableItemBackground" />
+
+                    <ImageView
+                         android:layout_height="42dp"
+                         android:layout_width="42dp"
+                         android:src="@drawable/delete_ic"
+                         android:padding="8dp"
+                         android:tint="?attr/colorControlNormal"
+                         android:layout_marginStart="8dp"
+                         android:id="@+id/delete"
+                         android:foreground="?attr/selectableItemBackground" />
+
+                    <ImageView
+                         android:layout_height="42dp"
+                         android:layout_width="42dp"
+                         android:src="@drawable/edit_ic"
+                         android:padding="8dp"
+                         android:tint="?attr/colorControlNormal"
+                         android:layout_marginStart="8dp"
+                         android:id="@+id/edit_button"
+                         android:foreground="?attr/selectableItemBackground" />
+
+                    <ImageView
+                         android:layout_height="42dp"
+                         android:layout_width="42dp"
+                         android:src="@drawable/bag_ic"
+                         android:padding="8dp"
+                         android:tint="?attr/colorControlNormal"
+                         android:layout_marginStart="8dp"
+                         android:id="@+id/bag_button"
+                         android:foreground="?attr/selectableItemBackground" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:visibility="gone"
+         android:layout_marginTop="16dp"
+         android:id="@+id/total_weight_button"
+         android:text="Update Weight" />
+
+</LinearLayout>
